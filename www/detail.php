@@ -1,0 +1,9 @@
+<?php echo $album['title'] ?>
+    <?php echo $album['artist'] ?>
+    <?php echo $album['description'] ?>
+    <?php echo $album['genre'] ?>
+    <?php echo $album['release_year'] ?>
+    <?php echo $album['price'] ?>
+    <?php echo $album['tracks'] ?>
+    <?php echo $album['image'] ?>
+    <?php echo $album['added_at'] ?>

@@ -1,0 +1,168 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+   
+}
+
+
+header {
+    background-color: blueviolet; 
+    width: 100%; 
+    top: 0; 
+    position:fixed ;
+    padding: 0px; 
+    border-radius:0px;
+}
+
+
+header nav {
+    width: 100%;
+}
+
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: end; 
+}
+
+header nav ul li {
+    list-style: none; 
+    margin: 0 15px; 
+}
+
+
+header nav ul li a {
+    text-decoration: none;  
+    color: white;  
+    font-size: 18px; 
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* === Pagina titel === */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 2px solid #222;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* === Album grid === */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* === Album kaart === */
+.album-box {
+  background: #fff;
+  border: 0.5px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.album-box:hover {
+  border-color: #999;
+}
+
+/* === Album afbeelding === */
+.album-box img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* === Album info wrapper === */
+.album-info {
+  padding: 14px;
+}
+
+.album-info h2 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.album-info .artist {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.album-info .description {
+  font-size: 12px;
+  color: #888;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* === Tags (genre + tracks) === */
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.genre {
+  font-size: 11px;
+  background: #EEEDFE;
+  color: #3C3489;
+  padding: 3px 9px;
+  border-radius: 99px;
+  font-weight: 500;
+}
+
+.tracks {
+  font-size: 11px;
+  background: #f0efeb;
+  color: #555;
+  padding: 3px 9px;
+  border-radius: 99px;
+}
+
+/* === Footer (prijs + link) === */
+.album-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 0.5px solid #eee;
+}
+
+.prijs {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+}
+
+.album-info a {
+  font-size: 12px;
+  color: #534AB7;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.album-info a:hover {
+  text-decoration: underline;
+}
